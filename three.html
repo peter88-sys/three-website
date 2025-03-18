@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name's Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function displayInfo() {
+            const location = window.location.href;
+            const lastModified = document.lastModified;
+            document.getElementById("page-info").innerHTML = 
+                "Page Location: " + location + "<br>Last Modified: " + lastModified;
+        }
+    </script>
+</head>
+<body onload="displayInfo()">
+
+<header>
+    <h1>PETER HILARY MAPUNDA</h1>
+</header>
+
+<section id="personal-info">
+    <h2>Personal Info</h2>
+    <p>Hello! My name is <strong>PETER H. MAPUNDA</strong>. I'm from <strong>DAR ES SALAAM, TANZANIA</strong>. I have a passion for <strong>travelling and Reading</strong> and enjoy exploring new ideas and experiences.</p>
+    <p>I currently work as a <strong>Programmer</strong> at <strong>Open University of tanzania</strong>. In my free time, I love to <em>Read books</em> and <em>Travelling</em>. My goal is to continually learn and grow, both personally and professionally.</p>
+</section>
+
+<section id="hobbies">
+    <h2>Hobbies</h2>
+    <p>In my spare time, I enjoy a variety of activities:</p>
+    <ul>
+        <li>Reading books, especially in the genres of <strong>Poetry</strong> and <strong>Fiction</strong>.</li>
+        <li>Travelling to new places and immersing myself in different cultures.</li>
+        <li>Cooking and trying out new recipes.</li>
+        <li>Playing <strong>Football</strong>.</li>
+    </ul>
+</section>
+
+<section id="images">
+    <h2>Images</h2>
+    <img src="local-image.jpg" alt="Description of Local Image" width="300">
+    <img src="https://www.serengeti.com/assets/img/singita-serengeti-special-offer-stay-6-pay-5.jpg" alt="Description of External Image" width="600">
+</section>
+
+<section id="favorites">
+    <h2>Favorite Links</h2>
+    <ul>
+        <li><a href="https://www.open.ac.tz/">Open University of Tanzania</a> - A great place for further education.</li>
+        <li><a href="https://www.tanzania-experience.com/blog/">My Favorite Blog</a> - tanzania-experience  <strong>Traveling blogs</strong>.</li>
+        <li><a href="https://www.cambridge.org/gb/education/subject/computing/ict">Learning Resources</a> - A collection of educational resources.</li>
+        <li>For more on my hobbies, check out <a href="https://africaadventurevacations.com/">this site about Travelling experiences</a>.</li>
+        <li><a href="#personal-info">Back to Personal Info</a> - Jump back to my personal information.</li>
+    </ul>
+</section>
+
+<section id="table-section">
+    <h2>My Favorite Books</h2>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><strong>HISTORIA YA MAPAMBANO YA MTANZANIA</strong></td>
+            <td>H.MAPUNDA</td>
+            <td>Tanzanian Historical life before, during the invension of colonial and the life on the independence.</th>
+        <tr>
+            <td><strong>UHURU NA UJAMAA</strong></td>
+            <td>JK. Nyerere</td>
+            <td>ARUSHA declaration on 1967 .</td>
+        </tr>
+        <tr>
+            <td><strong>MY LIFE MY PURPOSE</strong></td>
+            <td>BENJAMIN MKAPA</td>
+            <td>His Excellency Benjamin Mkapa was Tanzanian’s third president, elected under the first multi-party general election in Tanzania. His memoirs range from his childhood, time as president, and his continuing post-retirement involvement on the international stage of development and peace mediation</td>
+        </tr>
+    </table>
+</section>
+
+<footer>
+    <p id="page-info"></p>
+</footer>
+
+</body>
+</html>
